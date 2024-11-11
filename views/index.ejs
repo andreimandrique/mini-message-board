@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1><%=title %></h1>
+    <h1><%= title %></h1>
     <%- include('navbar', {links: links}) %>
     <div class="msg-container">
       <% messages.forEach((mesage) => { %> <%- include('message', {msg:

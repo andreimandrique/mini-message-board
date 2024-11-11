@@ -26,6 +26,14 @@ h1 {
   background-color: blue;
   color: white;
 }
+.error-container {
+  display: flex;
+  justify-content: center;
+}
+.error-container > ul > li {
+  list-style: none;
+  color: red;
+}
 .msg-container {
   margin-top: 2rem;
   display: flex;
