@@ -12,11 +12,9 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 const indexRouter = require("./routes/indexRouter");
-
-app.use("/", indexRouter);
-
 const messageRouter = require("./routes/messageRouter");
 
+app.use("/", indexRouter);
 app.use("/new", messageRouter);
 
 app.listen(port, () => {
